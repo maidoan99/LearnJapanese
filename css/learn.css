@@ -1,0 +1,276 @@
+.learn {
+    background-color: #eef0f1!important;
+    color: #2B3648;
+    min-width: 520px;
+}
+
+#logo-learn {
+    color: black;
+    width: 25%;
+    font-size: 30px;
+    text-align: center;
+    font-weight: bold;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.page-breadcrumb {
+    color: #423c3c;
+    margin: 0;
+    font-weight: bold;
+    line-height: 45px;
+    float: left;
+    font-size: 25px;
+}
+.ul-fix{
+    font-size: 16px;
+    margin-top: 2px;
+}
+.fafix{
+    color: white;
+    font-size: 2em;
+    line-height: .75em;
+    margin-right: 3.5rem;
+}
+.col-sm-8.card {
+    border-radius: 5px;
+}
+
+.a-learn {
+    color: #2B3648;
+    font-weight: bold;
+    font-size: 20px;
+
+}
+.fix{
+    width: 502.56px;
+    text-align: left;
+    margin: 2.5% 0 0 0;
+}
+
+.card .row-learn{
+    margin: 20px 0px;
+    display: flex;
+    background-color: #fff;
+    padding: 10px 0px;
+}
+.leaderboard-row{
+    margin-left: 20px;
+    margin-right: 20px;
+}
+
+.card .row-learn .img-learn .a-learn {
+    display: table;
+    margin: 0 auto;
+}
+
+.a-learn:hover {
+    /* color: #0f87d4; */
+    color: #179fc5;
+}
+
+.title {
+    background-color: #fff;
+}
+
+.title h2 {
+    font-size: 23px;
+    font-weight: bold;
+}
+
+.card .course-img {
+    border-radius: 70%;
+    width: 110px;
+    height: 120px;
+    box-shadow: 0px 1px 3px 0px rgba(0, 0, 0, 0.16);
+}
+
+.card .course-img:hover {
+    /* box-shadow: 2px 3px 3px 0px rgba(0,0,0,0.16); */
+    transform: scale(1.03);
+}
+
+.right {
+    text-align: right;
+    margin: 4px 0 4px 0;
+    width: 100%;
+    font-size: 12px;
+    letter-spacing: -0.2px;
+}
+
+.course-complete {
+    border: 1px solid #179fc5;
+    border-radius: 16px;
+    padding: 4px 8px;
+    font-size: 13px;
+}
+
+.buttons {
+    text-align: right;
+    margin-top: 10px;
+}
+
+.icon-learn {
+    margin-right: 3px;
+    height: 25px;
+}
+.num{
+    padding-top: 7px;
+}
+.text {
+    vertical-align: middle;
+    font-size: 13px;
+    font-weight: 400;
+    letter-spacing: -0.5px;
+}
+.score{
+    text-align: right;
+}
+.btn-learn {
+    height: 37px;
+    padding: 0px 7px;
+    margin: 3px 0px;
+    color: #000;
+    background-color: #fff;
+}
+
+.btn-learn:hover {
+    animation: ani .4s ease-in-out infinite alternate;
+    background-color: #5bc0de;
+    border: 1px solid #179fc5;
+}
+
+.btn-learn:focus {
+    outline: 0!important;
+}
+
+@keyframes ani {
+    0% {
+        transform: translateY(3px)
+    }
+    100% {
+        transform: translateY(5px)
+    }
+}
+
+.well {
+    margin-top: 17px;
+    background-color: white;
+    border-color: white;
+}
+.leaderboard{
+    margin-top: -10px;
+}
+.profile{
+    margin-bottom: 30px;
+}
+.profile-username{
+    margin-top: 20px;
+    color: black;
+    padding: 0px 3px;
+}
+.profile-avatar{
+    margin-bottom: 10px;
+}
+.profile-level{
+    margin-top: 10px;
+    margin-bottom: 19px;
+}
+.title-leaderboard{
+    margin-top: 20px;
+    margin-bottom: 45px;
+    height: 30px;
+
+}
+.icon-leaderboard{
+    margin-bottom: 4px;
+    width: 25px;
+    height: 25px;
+}
+.card {
+    border-radius: 5px;
+}
+
+.col-6 {
+    width: 40%;
+    float: left;
+    margin-left: 5%;
+    margin-right: 5%;
+}
+
+#leader-board-list{
+    float: left;
+    margin-top: 10px;
+}
+p{
+    margin: -6px 0px 10px 0px;
+}
+#leader-board-list p{
+    margin: 0 0 10px 30px;
+}
+
+.row.row-learn{
+    margin-left: 0px;
+    margin-right: 0px;
+}
+
+
+.col-1 {
+    width: 10%;
+    margin-left: 5%;
+}
+
+.col-7 {
+    width: 65%;
+}
+
+.col-2{
+    width: 15%;
+}
+.well.col-xs-5.profile-small{
+    width: 48%;
+    float: left;
+
+}
+.well.col-xs-5.leaderboard-small{
+    width: 48%;
+    float: right;
+    padding-bottom: 33px;
+}
+
+.listUser:hover{
+    color: #179fc5;
+}
+.avatar-leaderboard{
+    height: 50px;
+    width: 50px;
+}
+
+@media (max-width: 1600px){
+    .profile-down {
+        display: none;
+    }
+}
+
+@media (max-width: 845px){
+    .profile-down {
+        display: block;
+    }
+    .col-sm-4.text-center.profile-up{
+        display: none;
+    }
+
+    .col-md-9.wrapper {
+        width: 100%;
+    }
+
+    .card{
+        width: 100%;
+    }
+    .ul-fix{
+        margin: 0 -10px 0 -2px;
+    }
+    
+
+
+}
+

@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <title>JapaneseTogether</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="css/learn.css">
+  <link rel="stylesheet" href="css/main.css">
+</head>
+
+<body>
+  <header>
+    <nav class="navbar navbar-default text-center"
+      style="background-color: white;box-shadow: 0 .5rem 1rem rgba(0,0,0,.15)!important;padding: 1rem 0.5rem;">
+      <div class="container" style="margin-right: 88.5;">
+        <div class="navbar-header">
+          <a class="navbar-brand" id="logo-learn" href="index.html">JapaneseTogether</a>
+          <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#barItem">
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+        </div>
+        <div class="collapse navbar-collapse" id="barItem">
+          <ul class="nav navbar-nav">
+            <li class="navItem">
+              <a href="index.html" style="font-size: 18px;margin: -1px -10px 0 -6px;">Home</a>
+            </li>
+            <li class="navItem">
+              <a href="course.html" style="font-size: 18px;margin: -1px -10px 0 -6px;">Courses</a>
+            </li>
+            <li class="navItem">
+              <a href="#" style="color: black;font-weight: bold;font-size: 18px;margin: -1px -10px 0 -6px; ">Learn</a>
+            </li>
+
+          </ul>
+          <ul class="nav navbar-nav navbar-right ul-fix" style="font-size: 16px;margin-top: 2px ;">
+            <li><button class="btn btn-danger btn-block navButton" type="button"
+                onclick="document.getElementById('logIn').style.display='block'"><span><i
+                    class="fa fa-user-o"></i></span>
+                Log in
+              </button></li>
+            <li><button class="btn btn-danger btn-block navButton" type="button"
+                onclick="document.getElementById('register').style.display='block'"><span><i
+                    class="fa fa-user-plus"></i></span> Register
+              </button></li>
+          </ul>
+        </div>
+        <div id="logIn" class="modal">
+          <form action="D:/HK5/UI/UI_final/learnlogin.html" method="POST">
+            <div class="animate container container-modal" style="background-color: #f8f9fa!important;">
+              <span onclick="document.getElementById('logIn').style.display='none'" class="close"
+                title="Close Modal">&times;</span>
+
+              <div>
+                <h1 style="text-align: center;">Log In</h1>
+                <p style="text-align: center;">login here using your username and password
+                </p>
+              </div>
+
+              <div class="container">
+                <label for="username_login" class="fix">Username</label>
+                <input type="text" name="username_login" class="form-control" style="width: 502.56px; float: left;"
+                  placeholder="Enter your username" required>
+
+                <label for="password_login" class="fix">Password</label>
+                <input type="password" name="password_login" class="form-control" style="width: 502.56px; float: left;"
+                  placeholder="Enter your password" required>
+
+                <a href="learnlogin.html"><button class="btn-block btn btn-danger fix"
+                  style="margin-top: 5%;margin-bottom: 2.5%; text-align: center;">
+                  LogIn
+                </button></a>
+                <div>
+                  <span style="float: left;">Forgot <a href="#">password?</a></span>
+                </div>
+              </div>
+            </div>
+          </form>
+        </div>
+
+        <div id="register" class="modal">
+          <form action="" method="POST">
+            <div class="animate container container-modal" style="background-color: #f8f9fa!important;">
+              <span onclick="document.getElementById('register').style.display='none'" class="close"
+                title="Close Modal">&times;</span>
+
+              <div>
+                <h1 style="text-align: center;">Register</h1>
+                <p style="text-align: center;">Please fill in this form to create an
+                  account.
+                </p>
+              </div>
+              <div class="container">
+                <label class="fix" for="User">Username</label>
+                <input type="text" name="username_signup" class="form-control" style="width: 502.56px; float: left;"
+                  placeholder="Enter your username" required>
+
+                <label class="fix" for="User">Email</label>
+                <input type="text" name="email_signup" class="form-control" style="width: 502.56px; float: left;"
+                  placeholder="Enter your email" required>
+
+                <label class="fix" for="Pass">Password</label>
+                <input type="password" name="password_signup" class="form-control" style="width: 502.56px; float: left;"
+                  placeholder="Enter your password" required>
+
+                <button class="btn-block btn btn-danger fix" type="submit"
+                  style="margin-top: 10%;margin-bottom: 2.5%;text-align: center;">
+                  Register
+                </button>
+              </div>
+            </div>
+          </form>
+        </div>
+      </div>
+
+    </nav>
+  </header>
+
+  <div class="learn">
+    <div class="title">
+      <div class="container">
+        <!-- <h2>Recently Learned</h2> -->
+        <h3 class="page-breadcrumb">Recently Learned</h3>
+      </div>
+    </div>
+    <div class="container" style="height: 284px;">
+     <h3>You need login to see recently your courses.</h3>
+    </div>
+    
+  <footer>
+    <div class="page-footer" style="background-color: #343a40!important;padding: 1.5rem 0 5rem 0!important;">
+      <div class="container">
+        <div class="row">
+          <div class="col-sm-6">
+            <div style="color: white;">
+              <h1 style="font-size: 40px;font-family: Arial, Helvetica, sans-serif;">Japanese Together</h1>
+              <p style="margin: 2.5% 0 0 0;font-size: 1.6rem;">Japanese Together exists to help eveyryone learn and
+                relax more. Now
+                you can learn everywhere, learn everytime and grow your knowledge faster.</p>
+            </div>
+          </div>
+          <div class="col-sm-6">
+            <div class="row">
+              <div style="margin-top: 6rem;">
+                <div class="text-center">
+                  <a class="fb-ic">
+                    <i class="fa fa-facebook-f fafix"> </i>
+                  </a>
+                  <a class="tw-ic">
+                    <i class="fa fa-twitter fafix"> </i>
+                  </a>
+                  <a class="gplus-ic">
+                    <i class="fa fa-google-plus fafix"> </i>
+                  </a>
+                  <!--Linkedin -->
+                  <a class="li-ic">
+                    <i class="fa fa-linkedin fafix"> </i>
+                  </a>
+                  <!--Instagram-->
+                  <a class="ins-ic">
+                    <i class="fa fa-instagram fafix"> </i>
+                  </a>
+                  <!--Pinterest-->
+                  <a class="pin-ic">
+                    <i class="fa fa-pinterest fafix"> </i>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="text-center" style="background: darkgray;padding-bottom: 18px!important;padding-top: 18px!important;font-size: 16px;">© 2019 Copyright:
+    </div>
+  </footer>
+
+</body>
+
+</html>
